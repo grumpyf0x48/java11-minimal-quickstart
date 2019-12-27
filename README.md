@@ -1,8 +1,8 @@
-# Java 9 Minimal Quickstart
+# Java 11 Minimal Quickstart
 
-This is a Maven Archetype for starting a minimal Java 9 project. It includes the following:
+This is a Maven Archetype for starting a minimal Java 11 project. It includes the following:
 
-- Configured to compile against Java 1.9
+- Configured to compile against Java 11
 - Fixes warnings that Maven generates by default
 
 # Usage
@@ -10,10 +10,16 @@ This is a Maven Archetype for starting a minimal Java 9 project. It includes the
 To create a new project using this archetype:
 
 ```bash
-$ mvn archetype:generate -B -DarchetypeGroupId=org.spilth -DarchetypeArtifactId=java9-minimal-quickstart -DgroupId=com.example -DartifactId=helloworld -Dversion=1.0.0
-$ cd helloworld
+$ mvn archetype:generate \
+       --batch-mode \
+       -DarchetypeGroupId=org.grumpyf0x48 \
+       -DarchetypeArtifactId=java11-minimal-quickstart \
+       -DarchetypeVersion=1.0.0 \
+       -DgroupId=com.example \
+       -DartifactId=new-java11-project \
+       -Dversion=0.1-SNAPSHOT
+
+$ cd new-java11-project
+
 $ mvn package
 ```
-
-For a less verbose way to use this archetype please check out [savant](http://spilth.org/projects/savant/).
-

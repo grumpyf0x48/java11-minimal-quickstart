@@ -2,14 +2,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.spilth</groupId>
-    <artifactId>java9-minimal-quickstart</artifactId>
+    <groupId>org.grumpyf0x48</groupId>
+    <artifactId>java11-minimal-quickstart</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>java9-minimal-quickstart</name>
-    <url>http://spilth.org/</url>
-    <description>A Maven Archetype for creating a minimal Java 9 project</description>
+    <name>java11-minimal-quickstart</name>
+    <description>A Maven Archetype for creating a minimal Java 11 project taken from
+        https://github.com/spilth/java9-minimal-quickstart
+    </description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,12 +30,17 @@
             <organization>spilth.org</organization>
             <organizationUrl>http://spilth.org/</organizationUrl>
         </developer>
+        <developer>
+            <name>Pierre-Yves Fourmond</name>
+            <email>pyfourmond@gmail.com</email>
+            <organizationUrl>http://blog.onkeyboardst.net/</organizationUrl>
+        </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:spilth/java9-minimal-quickstart.git</connection>
-        <developerConnection>scm:git:git@github.com:spilth/java9-minimal-quickstart.git</developerConnection>
-        <url>https://github.com/spilth/java9-minimal-quickstart</url>
+        <connection>scm:git:git@github.com:grumpyf0x48/java11-minimal-quickstart.git</connection>
+        <developerConnection>scm:git:git@github.com:grumpyf0x48/java11-minimal-quickstart.git</developerConnection>
+        <url>https://github.com/grumpyf0x48/java11-minimal-quickstart</url>
     </scm>
 
     <distributionManagement>
@@ -79,7 +85,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.5</version>
+                <version>1.6</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
