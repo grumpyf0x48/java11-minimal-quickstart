@@ -23,7 +23,7 @@ $ mvn install
 
 ### Generate a project using the archetype
 
-Then:
+For example, with Java 11:
 
 ```console
 $ mvn archetype:generate \
