@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.grumpyf0x48</groupId>
-    <artifactId>java11-minimal-quickstart</artifactId>
+    <artifactId>java-minimal-quickstart</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>java11-minimal-quickstart</name>
-    <description>A Maven Archetype for creating a minimal Java 11 project taken from
+    <name>java-minimal-quickstart</name>
+    <description>A Maven Archetype for creating a minimal Java project taken from
         https://github.com/spilth/java9-minimal-quickstart
     </description>
 

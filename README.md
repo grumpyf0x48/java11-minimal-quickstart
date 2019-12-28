@@ -1,17 +1,17 @@
-# Java 11 Minimal Quickstart
+# Java Minimal Quickstart
 
-This is a Maven Archetype for starting a minimal Java 11 project.
+This is a Maven Archetype for starting a minimal Java project.
 
 It includes the following:
 
-- Configured to compile against Java 11
 - Fixes warnings that Maven generates by default
 - Add Junit dependency
-- Add default Application and test file
+- Add default Application and test files
+- java.version sets on the command line
 
 # Usage
 
-To create a new project using this archetype:
+To create a new Java project using this archetype:
 
 ```console
 $ mvn archetype:generate \
@@ -21,8 +21,11 @@ $ mvn archetype:generate \
        -DarchetypeVersion=1.0.0 \
        -DgroupId=com.example \
        -DartifactId=new-java11-project \
-       -Dversion=0.1-SNAPSHOT
+       -Dversion=0.1-SNAPSHOT \
+       -DjavaVersion=1.11
 ```
+
+Warning: Property `javaVersion` is mandatory. It will set `java.version` in `pom.xml` of the generated project.
 
 ```console
 $ tree new-java11-project
