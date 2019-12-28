@@ -38,9 +38,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:grumpyf0x48/java11-minimal-quickstart.git</connection>
-        <developerConnection>scm:git:git@github.com:grumpyf0x48/java11-minimal-quickstart.git</developerConnection>
-        <url>https://github.com/grumpyf0x48/java11-minimal-quickstart</url>
+        <connection>scm:git:git@github.com:grumpyf0x48/java-minimal-quickstart.git</connection>
+        <developerConnection>scm:git:git@github.com:grumpyf0x48/java-minimal-quickstart.git</developerConnection>
+        <url>https://github.com/grumpyf0x48/java-minimal-quickstart</url>
     </scm>
 
     <build>
