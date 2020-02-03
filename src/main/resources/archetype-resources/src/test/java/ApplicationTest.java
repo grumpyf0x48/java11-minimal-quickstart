@@ -1,6 +1,6 @@
 package ${package};
 
-import junit.*;
+import junit.framework.Test;
 
 public class ApplicationTest {
 }

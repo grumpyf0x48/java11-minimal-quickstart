@@ -37,9 +37,11 @@ $ mvn archetype:generate \
        -DjavaVersion=1.11
 ```
 
-**Warning**: Property `javaVersion` is mandatory. It will set `java.version` in `pom.xml` of the generated project.
+Property `javaVersion` will set `java.version` in `pom.xml` of the generated project.
 
-Then, the project looks like:
+Its default value is: 1.8.
+
+Then, the generated project will look like:
 
 ```console
 $ tree java11-project
