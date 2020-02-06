@@ -1,6 +1,7 @@
 package ${package};
 
-import junit.framework.Test;
+import org.junit.Test;
 
-public class ApplicationTest {
+public class ApplicationTest
+{
 }
