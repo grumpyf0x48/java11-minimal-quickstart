@@ -1,0 +1,19 @@
+#!/bin/bash
+
+versionDefault=0.01-SNAPSHOT
+javaVersionDefault=1.8
+
+read -p 'Project groupId: ' groupId
+read -p 'Project artifactId: ' artifactId
+read -p 'Project version: ' version
+read -p 'Java version: ' javaVersion
+
+mvn --batch-mode \
+    -DarchetypeGroupId=org.grumpyf0x48 \
+    -DarchetypeArtifactId=java-minimal-quickstart \
+    -DarchetypeVersion=1.0.0 \
+    -DgroupId="${groupId}" \
+    -DartifactId="${artifactId}" \
+    -Dversion="${version:-${versionDefault}}" \
+    -DjavaVersion="${javaVersion:-${javaVersionDefault}}" \
+     archetype:generate
