@@ -26,15 +26,15 @@ mvn install
 For example, to create a Java 11 project with the following coordinates: `com.example`, `java11-project`, `0.1-SNAPSHOT`:
 
 ```console
-mvn archetype:generate \
-    --batch-mode \
+mvn --batch-mode \
     -DarchetypeGroupId=org.grumpyf0x48 \
     -DarchetypeArtifactId=java-minimal-quickstart \
     -DarchetypeVersion=1.0.0 \
     -DgroupId=com.example \
     -DartifactId=java11-project \
     -Dversion=0.1-SNAPSHOT \
-    -DjavaVersion=1.11
+    -DjavaVersion=1.11 \
+     archetype:generate
 ```
 
 Property `javaVersion` will set `java.version` in `pom.xml` of the generated project.
