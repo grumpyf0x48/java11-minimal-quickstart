@@ -39,7 +39,7 @@ mvn --batch-mode \
 
 Property `javaVersion` will set `java.version` in `pom.xml` of the generated project.
 
-Its default value is: 1.8.
+Its default value is: 1.11.
 
 Then, the generated project will look like:
 
