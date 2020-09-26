@@ -33,13 +33,13 @@ mvn --batch-mode \
     -DgroupId=com.example \
     -DartifactId=java11-project \
     -Dversion=0.1-SNAPSHOT \
-    -DjavaVersion=1.11 \
+    -DjavaVersion=11 \
      archetype:generate
 ```
 
 Property `javaVersion` will set `java.version` in `pom.xml` of the generated project.
 
-Its default value is: 1.11.
+Its default value is: 11.
 
 Then, the generated project will look like:
 
