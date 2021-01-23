@@ -4,6 +4,12 @@
         <requiredProperty key="javaVersion">
             <defaultValue>11</defaultValue>
         </requiredProperty>
+        <requiredProperty key="name">
+            <defaultValue>Update Project: ${artifactId} name here</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="description">
+            <defaultValue>Update Project: ${artifactId} description here</defaultValue>
+        </requiredProperty>
     </requiredProperties>
     <fileSets>
         <fileSet filtered="true" packaged="true" encoding="UTF-8">

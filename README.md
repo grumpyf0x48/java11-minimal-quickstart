@@ -23,7 +23,7 @@ mvn install
 
 ### Generate a project using the archetype
 
-For example, to create a Java 11 project with the following coordinates: `com.example`, `java11-project`, `0.1-SNAPSHOT`:
+For example, to create a Java **11** project with the following coordinates: `com.example`, `java11-project`, `0.1-SNAPSHOT`:
 
 ```console
 mvn --batch-mode \
@@ -33,13 +33,17 @@ mvn --batch-mode \
     -DgroupId=com.example \
     -DartifactId=java11-project \
     -Dversion=0.1-SNAPSHOT \
+    -Dname="Project Name" \
+    -Ddescription="Project Description" \
     -DjavaVersion=11 \
      archetype:generate
 ```
 
 Property `javaVersion` will set `java.version` in `pom.xml` of the generated project.
 
-Its default value is: 11.
+Its default value is: **11**.
+
+Properties `name` and `description` are optional and will be set with default values if not set in the previous command.
 
 Then, the generated project will look like:
 
