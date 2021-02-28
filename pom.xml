@@ -5,7 +5,6 @@
     <groupId>org.grumpyf0x48</groupId>
     <artifactId>java-minimal-quickstart</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
 
     <name>java-minimal-quickstart</name>
     <description>A Maven Archetype for creating a minimal Java project taken from
