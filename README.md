@@ -2,12 +2,13 @@
 
 This is a Maven Archetype for starting a minimal Java project.
 
-It includes the following:
+It adds the following to what was defined in [java9-minimal-quickstart](https://github.com/spilth/java9-minimal-quickstart):
 
-- Fixes warnings that Maven generates by default
-- Add default application and test files
-- Add Junit dependency
-- java.version sets on the command line via the property `javaVersion`
+- Fix Maven warnings
+- Add default `Application.java` and test file `ApplicationTest.java`
+- Add Junit 4 dependency
+- Add maven-enforcer-plugin and versions-maven-plugin plugins 
+- `java.version` command line setting via the property `javaVersion`
 
 ## Usage
 
