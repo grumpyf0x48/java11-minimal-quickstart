@@ -7,7 +7,8 @@ It adds the following to what was defined in [java9-minimal-quickstart](https://
 - Fix Maven warnings
 - Add default `Application.java` and test file `ApplicationTest.java`
 - Add Junit 4 dependency
-- Add maven-enforcer-plugin and versions-maven-plugin plugins 
+- Add `maven-enforcer-plugin` and `versions-maven-plugin` plugins
+- Add `jacoco-maven-plugin` plugin  
 - `java.version` command line setting via the property `javaVersion`
 
 ## Usage
