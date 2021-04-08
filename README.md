@@ -4,7 +4,6 @@ This is a Maven Archetype for starting a minimal Java project.
 
 It adds the following to what was defined in [java9-minimal-quickstart](https://github.com/spilth/java9-minimal-quickstart):
 
-- Fix Maven warnings
 - Add default `Application.java` and test file `ApplicationTest.java`
 - Add Junit 5 dependency
 - Add `maven-enforcer-plugin` and `versions-maven-plugin` plugins
