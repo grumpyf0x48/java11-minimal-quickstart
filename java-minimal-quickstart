@@ -1,7 +1,7 @@
 #!/bin/bash
 
 groupIdDefault=com.mycompany
-versionDefault=0.1-SNAPSHOT
+versionDefault=0.0.1-SNAPSHOT
 javaVersionDefault=11
 
 read -p "Project groupId (${groupIdDefault}): " groupId
