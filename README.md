@@ -54,10 +54,10 @@ java11-project
 ├── pom.xml
 └── src
     ├── main
-    │   └── java
-    │       └── com
-    │           └── example
-    │               └── Application.java
+    │        └── java
+    │            └── com
+    │                └── example
+    │                    └── Application.java
     └── test
         └── java
             └── com
