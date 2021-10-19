@@ -49,7 +49,7 @@ Properties `name` and `description` are optional and will be set with default va
 Then, the generated project will look like:
 
 ```console
-$ tree java17-project
+tree java17-project
 java17-project
 ├── pom.xml
 └── src
