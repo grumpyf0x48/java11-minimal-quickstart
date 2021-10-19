@@ -2,7 +2,7 @@
 
 groupIdDefault=com.mycompany
 versionDefault=0.0.1-SNAPSHOT
-javaVersionDefault=11
+javaVersionDefault=17
 
 read -p "Project groupId (${groupIdDefault}): " groupId
 read -p "Project artifactId: " artifactId
