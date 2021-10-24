@@ -24,7 +24,7 @@ cd java-minimal-quickstart
 
 ### Generate a project using the archetype
 
-For example, to create a Java **17** project with the following coordinates: `com.example`, `java17-project`, `0.0.1-SNAPSHOT`:
+For example, to create a Java **11** project with the following coordinates: `com.example`, `java11-project`, `0.0.1-SNAPSHOT`:
 
 ```console
 mvn --batch-mode \
@@ -32,11 +32,11 @@ mvn --batch-mode \
     -DarchetypeArtifactId=java-minimal-quickstart \
     -DarchetypeVersion=1.0.0 \
     -DgroupId=com.example \
-    -DartifactId=java17-project \
+    -DartifactId=java11-project \
     -Dversion=0.0.1-SNAPSHOT \
     -Dname="Project Name" \
     -Ddescription="Project Description" \
-    -DjavaVersion=17 \
+    -DjavaVersion=11 \
      archetype:generate
 ```
 
@@ -49,8 +49,8 @@ Properties `name` and `description` are optional and will be set with default va
 Then, the generated project will look like:
 
 ```console
-tree java17-project
-java17-project
+tree java11-project
+java11-project
 ├── pom.xml
 └── src
     ├── main
