@@ -19,7 +19,7 @@ To create a new Java project using this archetype:
 ```console
 git clone git@github.com:grumpyf0x48/java-minimal-quickstart.git
 cd java-minimal-quickstart
-mvn install
+./mvnw install
 ```
 
 ### Generate a project using the archetype
@@ -36,7 +36,6 @@ mvn --batch-mode \
     -Dversion=0.0.1-SNAPSHOT \
     -Dname="Project Name" \
     -Ddescription="Project Description" \
-    -DjavaVersion=17 \
      archetype:generate
 ```
 
