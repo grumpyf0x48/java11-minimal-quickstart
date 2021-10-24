@@ -36,6 +36,7 @@ mvn --batch-mode \
     -Dversion=0.0.1-SNAPSHOT \
     -Dname="Project Name" \
     -Ddescription="Project Description" \
+    -DjavaVersion=17 \
      archetype:generate
 ```
 
