@@ -4,11 +4,11 @@ This is a Maven Archetype for starting a minimal Java project.
 
 It adds the following to what was defined in [java9-minimal-quickstart](https://github.com/spilth/java9-minimal-quickstart):
 
+- `java.version` command line setting via the property `javaVersion`
 - Add default `Application.java` and test file `ApplicationTest.java`
 - Add Junit 5 dependency
-- Add `maven-enforcer-plugin` and `versions-maven-plugin` plugins
-- Add `jacoco-maven-plugin` plugin
-- `java.version` command line setting via the property `javaVersion`
+- Add `jacoco-maven-plugin` plugin for code coverage
+- Add `maven-enforcer-plugin` and `versions-maven-plugin` plugins for obsolete dependencies handing
 
 ## Usage
 
