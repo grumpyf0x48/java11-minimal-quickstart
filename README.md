@@ -66,3 +66,29 @@ java11-project
 
 9 directories, 3 files
 ```
+
+#### Run the tests
+
+Once `ApplicationTest.java` has no more failing tests:
+
+```console
+mvn test
+```
+
+#### Check the code coverage
+
+```console
+firefox target/site/jacoco/index.html &
+```
+
+#### Check obsolete plugins
+
+```console
+mvn versions:display-plugin-updates
+```
+
+#### Check obsolete dependencies
+
+```console
+mvn versions:display-dependency-updates
+```
