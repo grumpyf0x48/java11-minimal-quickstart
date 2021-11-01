@@ -17,4 +17,4 @@ jobs:
           distribution: 'adopt'
 
       - name: 'Build and Test with Maven'
-        run: ./mvnw --batch-mode --no-transfer-progress verify archetype:integration-test
+        run: ./mvnw --batch-mode --no-transfer-progress -Darchetype.test.ignoreEOLStyle=true verify archetype:integration-test
