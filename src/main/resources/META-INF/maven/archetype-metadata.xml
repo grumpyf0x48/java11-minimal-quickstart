@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-descriptor name="basic">
     <requiredProperties>
-        <requiredProperty key="javaVersion">
-            <defaultValue>17</defaultValue>
+        <requiredProperty key="version">
+            <defaultValue>0.0.1-SNAPSHOT</defaultValue>
         </requiredProperty>
         <requiredProperty key="name">
             <defaultValue>Update Project: ${artifactId} name here</defaultValue>
         </requiredProperty>
         <requiredProperty key="description">
             <defaultValue>Update Project: ${artifactId} description here</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="javaVersion">
+            <defaultValue>17</defaultValue>
         </requiredProperty>
     </requiredProperties>
     <fileSets>

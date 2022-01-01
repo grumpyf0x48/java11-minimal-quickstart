@@ -44,7 +44,7 @@ Property `javaVersion` will set `java.version` in `pom.xml` of the generated pro
 
 Its default value is: **17**.
 
-Properties `name` and `description` are optional and will be set with default values if not set in the previous command.
+Properties `version`, `name` and `description` are optional and will be set with default values if not set in the previous command.
 
 Then, the generated project will look like:
 
