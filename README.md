@@ -14,7 +14,10 @@ It adds the following to what was defined in [java9-minimal-quickstart](https://
 
 ## Usage
 
-To create a new Java project using this archetype:
+To create a new Java project using this archetype, you need either:
+
+* build the archetype locally
+* update `~/.m2/settings.xml` to add the archetype maven repository
 
 ### Build the archetype locally
 
@@ -23,6 +26,52 @@ git clone git@github.com:grumpyf0x48/java-minimal-quickstart.git
 cd java-minimal-quickstart
 ./mvnw install
 ```
+
+### Update Maven configuration
+
+To include the archetype maven repository, set the following content in `~/.m2/settings.xml`:
+
+```console
+$ cat ~/.m2/settings.xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/grumpyf0x48/java-minimal-quickstart</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+
+  <servers>
+    <server>
+      <id>github</id>
+      <username>${env.GITHUB_ACTOR}</username>
+      <password>${env.GITHUB_TOKEN}</password>
+    </server>
+  </servers>
+</settings>
+```
+Having defined the following environment variables:
+
+* `GITHUB_ACTOR` set to your GitHub username
+* `GITHUB_TOKEN` set to a personal access token with read access to the `package` scope
 
 ### Generate a project using the archetype
 
