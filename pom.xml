@@ -7,8 +7,7 @@
     <version>0.1-SNAPSHOT</version>
 
     <name>java-minimal-quickstart</name>
-    <description>A Maven Archetype for creating a minimal Java project taken from
-        https://github.com/spilth/java9-minimal-quickstart
+    <description>A Maven Archetype for creating a minimal Java project taken from https://github.com/spilth/java9-minimal-quickstart
     </description>
 
     <distributionManagement>
