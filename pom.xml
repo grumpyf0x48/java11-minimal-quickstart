@@ -11,6 +11,14 @@
         https://github.com/spilth/java9-minimal-quickstart
     </description>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/grumpyf0x48/java-minimal-quickstart</url>
+        </repository>
+    </distributionManagement>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>

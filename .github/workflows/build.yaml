@@ -16,5 +16,10 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
 
-      - name: 'Build and Test with Maven'
+      - name: 'Build and Test'
         run: ./mvnw --batch-mode --no-transfer-progress -Darchetype.test.ignoreEOLStyle=true verify archetype:integration-test
+
+      - name: 'Publish package'
+        run: ./mvnw --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
