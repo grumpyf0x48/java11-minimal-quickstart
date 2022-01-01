@@ -8,7 +8,7 @@ It adds the following to what was defined in [java9-minimal-quickstart](https://
 - Add default `Application.java` and test file `ApplicationTest.java`
 - Add Junit 5 dependency
 - Add `jacoco-maven-plugin` plugin for code coverage
-- Add `maven-enforcer-plugin` and `versions-maven-plugin` plugins for obsolete dependencies handing
+- Add `maven-enforcer-plugin` and `versions-maven-plugin` plugins for obsolete dependencies handling
 
 ## Usage
 
