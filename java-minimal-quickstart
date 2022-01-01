@@ -12,7 +12,7 @@ read -p "Java version (${javaVersionDefault}): " javaVersion
 mvn --batch-mode \
     -DarchetypeGroupId=org.grumpyf0x48 \
     -DarchetypeArtifactId=java-minimal-quickstart \
-    -DarchetypeVersion=1.0.0 \
+    -DarchetypeVersion=0.1-SNAPSHOT \
     -DgroupId="${groupId:-${groupIdDefault}}" \
     -DartifactId="${artifactId}" \
     -Dversion="${version:-${versionDefault}}" \
