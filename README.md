@@ -100,7 +100,7 @@ Properties `version`, `name` and `description` are optional and will be set with
 Then, the generated project will look like:
 
 ```console
-tree java11-project
+$ tree java11-project
 java11-project
 ├── pom.xml
 └── src
