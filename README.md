@@ -1,5 +1,7 @@
 # Java Minimal Quickstart
 
+[![Java CI](https://github.com/grumpyf0x48/java-minimal-quickstart/actions/workflows/build.yaml/badge.svg)](https://github.com/grumpyf0x48/java-minimal-quickstart/actions/workflows/build.yaml)
+
 This is a Maven Archetype for starting a minimal Java project.
 
 It adds the following to what was defined in [java9-minimal-quickstart](https://github.com/spilth/java9-minimal-quickstart):
