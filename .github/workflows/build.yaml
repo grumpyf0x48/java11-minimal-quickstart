@@ -20,6 +20,6 @@ jobs:
         run: ./mvnw --batch-mode --no-transfer-progress -Darchetype.test.ignoreEOLStyle=true verify archetype:integration-test
 
       - name: 'Publish package'
-        run: ./mvnw --batch-mode deploy
+        run: ./mvnw --batch-mode -Dmaven.test.skip=true deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
