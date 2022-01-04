@@ -20,9 +20,9 @@ jobs:
           distribution: 'adopt'
 
       - name: 'Build and Test'
-        run: mvn --batch-mode --no-transfer-progress -Darchetype.test.ignoreEOLStyle=true verify archetype:integration-test
+        run: ./mvnw --batch-mode --no-transfer-progress -Darchetype.test.ignoreEOLStyle=true verify archetype:integration-test
 
       - name: 'Publish package'
-        run: mvn --batch-mode -Dmaven.test.skip=true deploy
+        run: ./mvnw --batch-mode -Dmaven.test.skip=true deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
