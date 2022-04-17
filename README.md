@@ -29,28 +29,21 @@ cd java-minimal-quickstart
 
 ### Update Maven configuration
 
-To include the archetype maven repository, set the following content in `~/.m2/settings.xml`:
+To include the archetype maven repository, add the following content in `~/.m2/settings.xml`:
 
 ```console
-$ cat ~/.m2/settings.xml
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <activeProfiles>
-    <activeProfile>github</activeProfile>
-  </activeProfiles>
+$ more ~/.m2/settings.xml
+...
   <profiles>
     <profile>
-      <id>github</id>
+      <id>java-minimal-quickstart</id>
       <repositories>
         <repository>
-          <id>central</id>
-          <url>https://repo1.maven.org/maven2</url>
-        </repository>
-        <repository>
-          <id>github</id>
+          <id>java-minimal-quickstart</id>
           <url>https://maven.pkg.github.com/grumpyf0x48/java-minimal-quickstart</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
@@ -61,17 +54,18 @@ $ cat ~/.m2/settings.xml
 
   <servers>
     <server>
-      <id>github</id>
+      <id>java-minimal-quickstart</id>
       <username>${env.GITHUB_ACTOR}</username>
       <password>${env.GITHUB_TOKEN}</password>
     </server>
   </servers>
-</settings>
+...
 ```
+
 Having defined the following environment variables:
 
 * `GITHUB_ACTOR` set to your GitHub username
-* `GITHUB_TOKEN` set to a personal access token with read access to the `package` scope
+* `GITHUB_TOKEN` set to a personal access token with 'read:packages' scope
 
 ### Generate a project using the archetype
 
@@ -79,6 +73,7 @@ For example, to create a Java **11** project with the following coordinates: `co
 
 ```console
 mvn --batch-mode \
+    -Pjava-minimal-quickstart \
     -DarchetypeGroupId=org.grumpyf0x48 \
     -DarchetypeArtifactId=java-minimal-quickstart \
     -DarchetypeVersion=0.1-SNAPSHOT \
