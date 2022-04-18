@@ -2,7 +2,7 @@
 
 [![Java CI](https://github.com/grumpyf0x48/java-minimal-quickstart/actions/workflows/build.yaml/badge.svg)](https://github.com/grumpyf0x48/java-minimal-quickstart/actions/workflows/build.yaml)
 
-This is a Maven Archetype for starting a minimal Java project.
+This is a Maven Archetype for starting a minimal Java project with Maven.
 
 It adds the following to what was defined in [java9-minimal-quickstart](https://github.com/spilth/java9-minimal-quickstart):
 
@@ -16,15 +16,17 @@ It adds the following to what was defined in [java9-minimal-quickstart](https://
 
 To create a new Java project using this archetype, you need either:
 
-* build the archetype locally
-* update `~/.m2/settings.xml` to add the archetype maven repository
+* [Build the archetype](#build-the-archetype-locally) locally
+* [Update Maven configuration](#update-maven-configuration) in `~/.m2/settings.xml` to add the archetype maven repository
+
+Then you can [generate a project](#generate-a-project-using-the-archetype) with the archetype.
 
 ### Build the archetype locally
 
 ```console
-git clone git@github.com:grumpyf0x48/java-minimal-quickstart.git
-cd java-minimal-quickstart
-./mvnw install
+git clone git@github.com:grumpyf0x48/java-minimal-quickstart.git && \
+    cd java-minimal-quickstart && \
+    ./mvnw install
 ```
 
 ### Update Maven configuration
@@ -33,7 +35,9 @@ To include the archetype maven repository, add the following content in `~/.m2/s
 
 ```console
 $ more ~/.m2/settings.xml
+
 ...
+
   <profiles>
     <profile>
       <id>java-minimal-quickstart</id>
@@ -59,7 +63,9 @@ $ more ~/.m2/settings.xml
       <password>${env.GITHUB_TOKEN}</password>
     </server>
   </servers>
+
 ...
+
 ```
 
 Having defined the following environment variables:
