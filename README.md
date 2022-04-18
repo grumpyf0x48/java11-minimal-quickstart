@@ -6,7 +6,7 @@ This is a Maven Archetype for starting a minimal Java project.
 
 It adds the following to what was defined in [java9-minimal-quickstart](https://github.com/spilth/java9-minimal-quickstart):
 
-- `java.version` command line setting via the property `javaVersion`
+- Add the possibility to set `java.version` on the command line via `javaVersion` property
 - Add default `Application.java` and test file `ApplicationTest.java`
 - Add Junit 5 dependency
 - Add `jacoco-maven-plugin` plugin for code coverage
