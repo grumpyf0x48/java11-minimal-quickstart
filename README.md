@@ -1,6 +1,6 @@
 # Java Minimal Quickstart
 
-[![Java CI](https://github.com/grumpyf0x48/java-minimal-quickstart/actions/workflows/build.yaml/badge.svg)](https://github.com/grumpyf0x48/java-minimal-quickstart/actions/workflows/build.yaml)
+[![Java CI](https://github.com/grumpyf0x48/java-maven-quickstart/actions/workflows/build.yaml/badge.svg)](https://github.com/grumpyf0x48/java-maven-quickstart/actions/workflows/build.yaml)
 
 This is a Maven Archetype for starting a minimal Java project with Maven.
 
@@ -24,8 +24,8 @@ Then you can [generate a project](#generate-a-project-using-the-archetype) with 
 ### Build the archetype locally
 
 ```console
-git clone git@github.com:grumpyf0x48/java-minimal-quickstart.git && \
-    cd java-minimal-quickstart && \
+git clone git@github.com:grumpyf0x48/java-maven-quickstart.git && \
+    cd java-maven-quickstart && \
     ./mvnw install
 ```
 
@@ -40,11 +40,11 @@ $ more ~/.m2/settings.xml
 
   <profiles>
     <profile>
-      <id>java-minimal-quickstart</id>
+      <id>java-maven-quickstart</id>
       <repositories>
         <repository>
-          <id>java-minimal-quickstart</id>
-          <url>https://maven.pkg.github.com/grumpyf0x48/java-minimal-quickstart</url>
+          <id>java-maven-quickstart</id>
+          <url>https://maven.pkg.github.com/grumpyf0x48/java-maven-quickstart</url>
           <releases>
             <enabled>true</enabled>
           </releases>
@@ -58,7 +58,7 @@ $ more ~/.m2/settings.xml
 
   <servers>
     <server>
-      <id>java-minimal-quickstart</id>
+      <id>java-maven-quickstart</id>
       <username>${env.GITHUB_ACTOR}</username>
       <password>${env.GITHUB_TOKEN}</password>
     </server>
@@ -79,9 +79,9 @@ For example, to create a Java **11** project with the following coordinates: `co
 
 ```console
 mvn --batch-mode \
-    -Pjava-minimal-quickstart \
+    -Pjava-maven-quickstart \
     -DarchetypeGroupId=org.grumpyf0x48 \
-    -DarchetypeArtifactId=java-minimal-quickstart \
+    -DarchetypeArtifactId=java-maven-quickstart \
     -DarchetypeVersion=0.1-SNAPSHOT \
     -DgroupId=com.example \
     -DartifactId=java11-project \
