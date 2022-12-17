@@ -1,4 +1,4 @@
-# Java Minimal Quickstart
+# Java Maven Quickstart
 
 [![Java CI](https://github.com/grumpyf0x48/java-maven-quickstart/actions/workflows/build.yaml/badge.svg)](https://github.com/grumpyf0x48/java-maven-quickstart/actions/workflows/build.yaml)
 
