@@ -10,9 +10,9 @@ read -p "Project version (${versionDefault}): " version
 read -p "Java version (${javaVersionDefault}): " javaVersion
 
 mvn --batch-mode \
-    -Pjava-minimal-quickstart \
+    -Pjava-maven-quickstart \
     -DarchetypeGroupId=org.grumpyf0x48 \
-    -DarchetypeArtifactId=java-minimal-quickstart \
+    -DarchetypeArtifactId=java-maven-quickstart \
     -DarchetypeVersion=0.1-SNAPSHOT \
     -DgroupId="${groupId:-${groupIdDefault}}" \
     -DartifactId="${artifactId}" \

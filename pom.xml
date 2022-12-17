@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.grumpyf0x48</groupId>
-    <artifactId>java-minimal-quickstart</artifactId>
+    <artifactId>java-maven-quickstart</artifactId>
     <version>0.1-SNAPSHOT</version>
 
-    <name>java-minimal-quickstart</name>
+    <name>java-maven-quickstart</name>
     <description>A Maven Archetype for creating a minimal Java project taken from https://github.com/spilth/java9-minimal-quickstart
     </description>
 
@@ -14,7 +14,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/grumpyf0x48/java-minimal-quickstart</url>
+            <url>https://maven.pkg.github.com/grumpyf0x48/java-maven-quickstart</url>
         </repository>
     </distributionManagement>
 
@@ -48,9 +48,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:grumpyf0x48/java-minimal-quickstart.git</connection>
-        <developerConnection>scm:git:git@github.com:grumpyf0x48/java-minimal-quickstart.git</developerConnection>
-        <url>https://github.com/grumpyf0x48/java-minimal-quickstart</url>
+        <connection>scm:git:git@github.com:grumpyf0x48/java-maven-quickstart.git</connection>
+        <developerConnection>scm:git:git@github.com:grumpyf0x48/java-maven-quickstart.git</developerConnection>
+        <url>https://github.com/grumpyf0x48/java-maven-quickstart</url>
     </scm>
 
     <build>
