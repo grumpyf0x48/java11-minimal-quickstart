@@ -34,7 +34,7 @@ git clone git@github.com:grumpyf0x48/java-maven-quickstart.git && \
 To include the archetype maven repository, add the following content in `~/.m2/settings.xml`:
 
 ```console
-$ more ~/.m2/settings.xml
+more ~/.m2/settings.xml
 
 ...
 
@@ -75,7 +75,7 @@ Having defined the following environment variables:
 
 ### Generate a project using the archetype
 
-For example, to create a Java **11** project with the following coordinates: `com.example`, `java11-project`, `0.0.1-SNAPSHOT`:
+For example, to create a Java **17** project with the following coordinates: `com.example`, `java17-project`, `0.0.1-SNAPSHOT`:
 
 ```console
 mvn --batch-mode \
@@ -84,11 +84,11 @@ mvn --batch-mode \
     -DarchetypeArtifactId=java-maven-quickstart \
     -DarchetypeVersion=0.1-SNAPSHOT \
     -DgroupId=com.example \
-    -DartifactId=java11-project \
+    -DartifactId=java17-project \
     -Dversion=0.0.1-SNAPSHOT \
     -Dname="Project Name" \
     -Ddescription="Project Description" \
-    -DjavaVersion=11 \
+    -DjavaVersion=17 \
      archetype:generate
 ```
 
@@ -101,8 +101,8 @@ Properties `version`, `name` and `description` are optional and will be set with
 Then, the generated project will look like:
 
 ```console
-$ tree java11-project
-java11-project
+tree java17-project
+java17-project
 ├── pom.xml
 └── src
     ├── main
