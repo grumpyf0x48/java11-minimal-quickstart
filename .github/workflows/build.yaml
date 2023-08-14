@@ -2,9 +2,13 @@ name: Java CI
 
 on:
   push:
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - master
+    branches: [ "master" ]
+
+env:
+  JAVA_VERSION: '17'
+  JAVA_DISTRIBUTION: 'temurin'
 
 jobs:
   build:
@@ -17,8 +21,8 @@ jobs:
       - name: 'Set up JDK 17'
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
-          distribution: 'adopt'
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: ${{ env.JAVA_DISTRIBUTION }}
 
       - name: 'Build and Test'
         run: ./mvnw --batch-mode --no-transfer-progress -Darchetype.test.ignoreEOLStyle=true verify archetype:integration-test
