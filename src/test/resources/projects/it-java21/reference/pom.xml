@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>java17-project</artifactId>
+    <artifactId>java21-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Project Name</name>
     <description>Project Description</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
+        <java.version>21</java.version>
         <junit.version>5.10.3</junit.version>
         <maven.compiler.version>3.13.0</maven.compiler.version>
         <maven-surefire-plugin.version>3.3.1</maven-surefire-plugin.version>
