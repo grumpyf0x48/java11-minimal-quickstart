@@ -11,7 +11,7 @@
             <defaultValue>Update Project: ${artifactId} description here</defaultValue>
         </requiredProperty>
         <requiredProperty key="javaVersion">
-            <defaultValue>17</defaultValue>
+            <defaultValue>21</defaultValue>
         </requiredProperty>
     </requiredProperties>
     <fileSets>

@@ -75,7 +75,7 @@ Having defined the following environment variables:
 
 ### Generate a project using the archetype
 
-For example, to create a Java **17** project with the following coordinates: `com.example`, `java17-project`, `0.0.1-SNAPSHOT`:
+For example, to create a Java **21** project with the following coordinates: `com.example`, `java21-project`, `0.0.1-SNAPSHOT`:
 
 ```console
 mvn --batch-mode \
@@ -84,25 +84,25 @@ mvn --batch-mode \
     -DarchetypeArtifactId=java-maven-quickstart \
     -DarchetypeVersion=0.1-SNAPSHOT \
     -DgroupId=com.example \
-    -DartifactId=java17-project \
+    -DartifactId=java21-project \
     -Dversion=0.0.1-SNAPSHOT \
     -Dname="Project Name" \
     -Ddescription="Project Description" \
-    -DjavaVersion=17 \
+    -DjavaVersion=21 \
      archetype:generate
 ```
 
 Property `javaVersion` will set `java.version` in `pom.xml` of the generated project.
 
-Its default value is: **17**.
+Its default value is: **21**.
 
 Properties `version`, `name` and `description` are optional and will be set with default values if not set in the previous command.
 
 Then, the generated project will look like:
 
 ```console
-tree java17-project
-java17-project
+tree java21-project
+java21-project
 ├── pom.xml
 └── src
     ├── main
